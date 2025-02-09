@@ -47,10 +47,10 @@ console.log(`Calculated Premium Subscription Cost: $${calculateSubscriptionCost(
 
 
 // Task 5 - Currency Conversion //
-function convertCurrency(amount, exchangeRate) {
-    let conversion = Math.floor(amount * exchangeRate);
+function convertCurrency(amount, exchangeRate) { // starting a fuction to convert currency
+    let conversion = Math.floor(amount * exchangeRate); // declaring the equation being used
     return conversion;
 };
 
-console.log(`Converted Currency 1: $${convertCurrency(100, 1.1)}`);
-console.log(`Converted Currency 2: $${convertCurrency(250, 0.85)}`);
+console.log(`Converted Currency 1: $${convertCurrency(100, 1.1)}`); // logging the first converted currency
+console.log(`Converted Currency 2: $${convertCurrency(250, 0.85)}`); // logging the second converted currency
