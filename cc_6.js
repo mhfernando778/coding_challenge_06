@@ -19,12 +19,12 @@ console.log(`Calculated Sales Tax 2: $${calculateSalesTax(500, .1)}`); // loggin
 
 
 // Task 3 - Employee Bonus Calculation //
-const calculateBonus = (salary, performanceRating) => salary * performanceRating;
-const performanceRating = {
+const calculateBonus = (salary, performanceRating) => salary * performanceRating; // stating what the arrow function will calcualte
+const performanceRating = { // the different performance ratings and the bonus amount they receive
     Excellent: .2,
     Good: .1,
     Average: .05
 };
 
-console.log(`Calculated Bonus: $${calculateBonus(5000, performanceRating.Excellent)}`);
-console.log(`Calculated Bonus: $${calculateBonus(7000, performanceRating.Good)}`);
+console.log(`Calculated Bonus: $${calculateBonus(5000, performanceRating.Excellent)}`); // logging the calculated bonus with given salary and rating
+console.log(`Calculated Bonus: $${calculateBonus(7000, performanceRating.Good)}`); // logging the calculated bonus with given salary and rating
