@@ -28,3 +28,19 @@ const performanceRating = { // the different performance ratings and the bonus a
 
 console.log(`Calculated Bonus: $${calculateBonus(5000, performanceRating.Excellent)}`); // logging the calculated bonus with given salary and rating
 console.log(`Calculated Bonus: $${calculateBonus(7000, performanceRating.Good)}`); // logging the calculated bonus with given salary and rating
+
+
+// Task 4 - Subscription Pricing Model //
+const subscriptionPlans = {
+    basic: 10,
+    premium: 20,
+    enterprise: 50
+};
+
+function calculateSubscriptionCost(plan, months, discount = 0) {
+    let cost = (plan * months) - discount
+    return cost;
+};
+
+console.log(`Calculated Basic Subscription Cost: $${calculateSubscriptionCost(subscriptionPlans.basic, 6, 10)}`);
+console.log(`Calculated Premium Subscription Cost: $${calculateSubscriptionCost(subscriptionPlans.premium, 12, 0)}`);
