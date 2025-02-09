@@ -16,3 +16,15 @@ const calculateSalesTax = function(amount, taxRate) { // starting a function exp
 
 console.log(`Calculated Sales Tax 1: $${calculateSalesTax(100, .07)}`); // logging the calculated sales tax with the given values
 console.log(`Calculated Sales Tax 2: $${calculateSalesTax(500, .1)}`); // logging the calculated sales tax with the given values
+
+
+// Task 3 - Employee Bonus Calculation //
+const calculateBonus = (salary, performanceRating) => salary * performanceRating;
+const performanceRating = {
+    Excellent: .2,
+    Good: .1,
+    Average: .05
+};
+
+console.log(`Calculated Bonus: $${calculateBonus(5000, performanceRating.Excellent)}`);
+console.log(`Calculated Bonus: $${calculateBonus(7000, performanceRating.Good)}`);
