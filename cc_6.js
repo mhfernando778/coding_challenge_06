@@ -9,10 +9,10 @@ console.log(`Profits Earned 2: $${calculateProfit(50, 70, 200)}`); // logging pr
 
 
 // Task 2 - Sales Tax Computation //
-const calculateSalesTax = function(amount, taxRate) {
-    let salesTax = Math.floor(amount * taxRate);
+const calculateSalesTax = function(amount, taxRate) { // starting a function expression to calculate sales tax
+    let salesTax = Math.floor(amount * taxRate); // stating the equation being used
     return salesTax;
 };
 
-console.log(`Calculated Sales Tax 1: $${calculateSalesTax(100, .07)}`);
-console.log(`Calculated Sales Tax 2: $${calculateSalesTax(500, .1)}`);
+console.log(`Calculated Sales Tax 1: $${calculateSalesTax(100, .07)}`); // logging the calculated sales tax with the given values
+console.log(`Calculated Sales Tax 2: $${calculateSalesTax(500, .1)}`); // logging the calculated sales tax with the given values
