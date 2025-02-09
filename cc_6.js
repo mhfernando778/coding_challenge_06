@@ -31,16 +31,16 @@ console.log(`Calculated Bonus: $${calculateBonus(7000, performanceRating.Good)}`
 
 
 // Task 4 - Subscription Pricing Model //
-const subscriptionPlans = {
+const subscriptionPlans = { // declaring what the cost of each plan is
     basic: 10,
     premium: 20,
     enterprise: 50
 };
 
-function calculateSubscriptionCost(plan, months, discount = 0) {
+function calculateSubscriptionCost(plan, months, discount = 0) { // starting the calculation for subscription cost
     let cost = (plan * months) - discount
     return cost;
 };
 
-console.log(`Calculated Basic Subscription Cost: $${calculateSubscriptionCost(subscriptionPlans.basic, 6, 10)}`);
-console.log(`Calculated Premium Subscription Cost: $${calculateSubscriptionCost(subscriptionPlans.premium, 12, 0)}`);
+console.log(`Calculated Basic Subscription Cost: $${calculateSubscriptionCost(subscriptionPlans.basic, 6, 10)}`); // logging a basic subscription plan
+console.log(`Calculated Premium Subscription Cost: $${calculateSubscriptionCost(subscriptionPlans.premium, 12, 0)}`); // logging a premium subscription plan
