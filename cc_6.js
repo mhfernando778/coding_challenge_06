@@ -44,3 +44,13 @@ function calculateSubscriptionCost(plan, months, discount = 0) { // starting the
 
 console.log(`Calculated Basic Subscription Cost: $${calculateSubscriptionCost(subscriptionPlans.basic, 6, 10)}`); // logging a basic subscription plan
 console.log(`Calculated Premium Subscription Cost: $${calculateSubscriptionCost(subscriptionPlans.premium, 12, 0)}`); // logging a premium subscription plan
+
+
+// Task 5 - Currency Conversion //
+function convertCurrency(amount, exchangeRate) {
+    let conversion = Math.floor(amount * exchangeRate);
+    return conversion;
+};
+
+console.log(`Converted Currency 1: $${convertCurrency(100, 1.1)}`);
+console.log(`Converted Currency 2: $${convertCurrency(250, 0.85)}`);
