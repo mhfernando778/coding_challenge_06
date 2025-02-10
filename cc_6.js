@@ -64,3 +64,17 @@ function applyBulkDiscount(orders, discountFunction) { // started a function to 
 let discountedOrders = applyBulkDiscount(orders, amount => amount * .9); // declaring the discount to be 10%
 
 console.log(`Discounted Orders: ${discountedOrders}`); // logging the discounted orders
+
+
+// Task 7 - Business Expense Tracker //
+function createExpenseTracker() {
+    let totalExpenses = 0;
+    return function(expense) {
+        totalExpenses += expense;
+        return totalExpenses;
+    };
+};
+
+let tracker = createExpenseTracker();
+console.log(`Total Tracked Expenses: $${tracker(200)}`); // logging  the total tracked expenses
+console.log(`Total Tracked Expenses: $${tracker(150)}`); // logged the total tracked expenses
