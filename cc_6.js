@@ -78,3 +78,12 @@ function createExpenseTracker() { // starting function to track expenses
 let tracker = createExpenseTracker();
 console.log(`Total Tracked Expenses: $${tracker(200)}`); // logging  the total tracked expenses
 console.log(`Total Tracked Expenses: $${tracker(150)}`); // logged the total tracked expenses
+
+
+// Task 8 - Employee Promotion Evaluation // 
+function calculateYearsToPromotion(employeeLevel) {
+
+};
+
+console.log(calculateYearsToPromotion(7));
+console.log(calculateYearsToPromotion(5));
