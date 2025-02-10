@@ -67,9 +67,9 @@ console.log(`Discounted Orders: ${discountedOrders}`); // logging the discounted
 
 
 // Task 7 - Business Expense Tracker //
-function createExpenseTracker() {
+function createExpenseTracker() { // starting function to track expenses
     let totalExpenses = 0;
-    return function(expense) {
+    return function(expense) { // returning another function
         totalExpenses += expense;
         return totalExpenses;
     };
