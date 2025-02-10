@@ -57,10 +57,10 @@ console.log(`Converted Currency 2: $${convertCurrency(250, 0.85)}`); // logging 
 
 
 // Task 6 - High-order Function for Bulk Orders //
-let orders = [200, 600, 1200, 450, 800];
-function applyBulkDiscount(orders, discountFunction) {
-    return orders.filter(order => order > 500).map(discountFunction);
+let orders = [200, 600, 1200, 450, 800]; // declared an array with five orders
+function applyBulkDiscount(orders, discountFunction) { // started a function to apply bulk discounts
+    return orders.filter(order => order > 500).map(discountFunction); // stating the parameters for the function
 }
-let discountedOrders = applyBulkDiscount(orders, amount => amount * .9);
+let discountedOrders = applyBulkDiscount(orders, amount => amount * .9); // declaring the discount to be 10%
 
-console.log(`Discounted Orders: ${discountedOrders}`);
+console.log(`Discounted Orders: ${discountedOrders}`); // logging the discounted orders
